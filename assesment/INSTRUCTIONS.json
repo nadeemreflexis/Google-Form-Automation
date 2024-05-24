@@ -1,0 +1,195 @@
+{
+  "quality_eval": [
+    {
+      "is_enabled": true,
+      "min_limit": 1,
+      "max_limit": null,
+      "out": "Comment Check.You used {} comments, should be between {} < {}",
+      "indicator": "USED_COMMENT"
+    },
+    {
+      "is_enabled": true,
+      "min_limit": 1,
+      "max_limit": null,
+      "out": "WebDriverWait Check.You used {} waits, should be between {} < {}",
+      "indicator": "USED_WAIT"
+    },
+    {
+      "is_enabled": true,
+      "min_limit": null,
+      "max_limit": 20,
+      "out": "Sleep statement Check.You used {} sleep statements, should be between {} < {}",
+      "indicator": "USED_THREAD_SLEEP"
+    },
+    {
+      "is_enabled": true,
+      "min_limit": 3,
+      "max_limit": null,
+      "out": "System Out Printline or Logging Check.You used {} System out Printline statements, should be between {} and {}",
+      "indicator": "USED_SOPL"
+    }
+  ],
+  "instruction_set": [
+    {
+      "is_enabled": true,
+      "test_case_fe": "Test Case 1 - Automate filling up a form",
+      "test_case_hint": "Check TestNG Test `testCase01`",
+      "testng_test_name": "testCase01",
+      "chrome_log_assessment": [
+        {
+          "validations": [
+            {
+              "object_notation": "COMMAND",
+              "operator": "contains",
+              "expected_value": "Navigate"
+            },
+            {
+              "object_notation": "COMMAND",
+              "operator": "contains",
+              "expected_value": "https://forms"
+            }
+          ],
+          "join": "AND",
+          "success_out": "Navigated to the google form",
+          "hint": "Ensure that you navigated to google form"
+        },
+        {
+          "validations": [
+            {
+              "object_notation": "COMMAND",
+              "operator": "contains",
+              "expected_value": "TypeElement"
+            },
+            {
+              "object_notation": "COMMAND",
+              "operator": "contains",
+              "expected_value": "Crio Learner"
+            }
+          ],
+          "join": "AND",
+          "success_out": "Typed name into input box",
+          "hint": "Ensure that you entered the text provided into name input"
+        },
+        {
+          "validations": [
+            {
+              "object_notation": "COMMAND",
+              "operator": "contains",
+              "expected_value": "TypeElement"
+            },
+            {
+              "object_notation": "COMMAND",
+              "operator": "contains",
+              "expected_value": "I want to be the best QA Engineer"
+            }
+          ],
+          "join": "AND",
+          "success_out": "Typed name into input box",
+          "hint": "Ensure that you entered the text provided into name input"
+        },
+        {
+          "validations": [
+            {
+              "object_notation": "COMMAND",
+              "operator": "contains",
+              "expected_value": "ClickElement"
+            },
+            {
+              "object_notation": "RESPONSE",
+              "operator": "contains",
+              "expected_value": "ClickElement"
+            }
+          ],
+          "join": "OR",
+          "success_out": "Clicked on Experience box",
+          "hint": "Ensure that you clicked on the experience option"
+        },
+        {
+          "validations": [
+            {
+              "object_notation": "COMMAND",
+              "operator": "contains",
+              "expected_value": "ClickElement"
+            },
+            {
+              "object_notation": "RESPONSE",
+              "operator": "contains",
+              "expected_value": "ClickElement"
+            }
+          ],
+          "join": "OR",
+          "success_out": "Clicked on Experience box",
+          "hint": "Ensure that you clicked on the experience option"
+        },
+        {
+          "validations": [
+            {
+              "object_notation": "COMMAND",
+              "operator": "contains",
+              "expected_value": "ClickElement"
+            },
+            {
+              "object_notation": "RESPONSE",
+              "operator": "contains",
+              "expected_value": "ClickElement"
+            }
+          ],
+          "join": "OR",
+          "success_out": "Chose any of the Tools you are experienced in",
+          "hint": "Ensure that you clicked on any the tools"
+        },
+        {
+          "validations": [
+            {
+              "object_notation": "COMMAND",
+              "operator": "contains",
+              "expected_value": "ClickElement"
+            },
+            {
+              "object_notation": "RESPONSE",
+              "operator": "contains",
+              "expected_value": "ClickElement"
+            }
+          ],
+          "join": "OR",
+          "success_out": "Chose how to be addressed option",
+          "hint": "Ensure that you clicked on 'how you want to be addressed' options"
+        },
+        {
+          "validations": [
+            {
+              "object_notation": "COMMAND",
+              "operator": "contains",
+              "expected_value": "TypeElement"
+            },
+            {
+              "object_notation": "COMMAND",
+              "operator": "contains",
+              "expected_value": "07"
+            }
+          ],
+          "join": "AND",
+          "success_out": "Entered correct time into time input",
+          "hint": "Ensure that you entered `07:30` into the time input box"
+        },
+        {
+          "validations": [
+            {
+              "object_notation": "COMMAND",
+              "operator": "contains",
+              "expected_value": "GetElementText"
+            },
+            {
+              "object_notation": "RESPONSE",
+              "operator": "contains",
+              "expected_value": "Thanks for your response, Automation Wizard"
+            }
+          ],
+          "join": "AND",
+          "success_out": "Read the then you text at the end of submission",
+          "hint": "Ensure that you read (getText) the last message at the end of the submission"
+        }
+      ]
+    }
+  ]
+}
