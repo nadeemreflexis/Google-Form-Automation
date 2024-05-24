@@ -84,8 +84,8 @@
             }
           ],
           "join": "AND",
-          "success_out": "Typed name into input box",
-          "hint": "Ensure that you entered the text provided into name input"
+          "success_out": "Typed phrase into input box",
+          "hint": "Ensure that you entered the text provided into phrase input"
         },
         {
           "validations": [
@@ -182,11 +182,11 @@
             {
               "object_notation": "RESPONSE",
               "operator": "contains",
-              "expected_value": "Thanks for your response, Automation Wizard"
+              "expected_value": "Thanks for your response"
             }
           ],
           "join": "AND",
-          "success_out": "Read the then you text at the end of submission",
+          "success_out": "Read the text at the end of submission",
           "hint": "Ensure that you read (getText) the last message at the end of the submission"
         }
       ]

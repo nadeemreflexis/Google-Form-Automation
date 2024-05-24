@@ -11,7 +11,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.util.logging.Level;
-import io.github.bonigarcia.wdm.WebDriverManager;
+// import io.github.bonigarcia.wdm.WebDriverManager;
 import demo.wrappers.Wrappers;
 
 public class TestCases {
@@ -30,13 +30,17 @@ public class TestCases {
     public void startBrowser()
     {
         System.setProperty("java.util.logging.config.file", "logging.properties");
-        WebDriverManager.chromedriver().timeout(30).setup();
+
+        // NOT NEEDED FOR SELENIUM MANAGER
+        // WebDriverManager.chromedriver().timeout(30).setup();
+
         ChromeOptions options = new ChromeOptions();
         LoggingPreferences logs = new LoggingPreferences();
 
         logs.enable(LogType.BROWSER, Level.ALL);
         logs.enable(LogType.DRIVER, Level.ALL);
         options.setCapability("goog:loggingPrefs", logs);
+        options.addArguments("--remote-allow-origins=*");
 
         System.setProperty(ChromeDriverService.CHROME_DRIVER_LOG_PROPERTY, "build/chromedriver.log"); 
 

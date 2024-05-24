@@ -20,12 +20,9 @@ repositories {
 dependencies {
 
     testImplementation 'org.testng:testng:6.9.10'
-   
-    // https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager
-    implementation 'io.github.bonigarcia:webdrivermanager:5.5.3'
 
     // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
-    implementation 'org.seleniumhq.selenium:selenium-java:4.14.0'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.21.0'
 
 }
 
