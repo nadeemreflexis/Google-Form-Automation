@@ -42,9 +42,8 @@
 
         <!-- Checks for Comments -->
         <module name="RegexpSinglelineJava">
-            <property name="format" value="\/\/"/>
+            <property name="format" value="^\s*\/\/"/>
             <property name="message" value="USED_COMMENT"/>
-            <property name ="ignoreComments" value="true"/>
         </module>
     </module>
 </module>
