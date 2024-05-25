@@ -22,3 +22,5 @@ gradle-app.setting
 
 # extras
 requirements.txt
+.vscode/
+venv/

@@ -2,7 +2,7 @@
   "quality_eval": [
     {
       "is_enabled": true,
-      "min_limit": 1,
+      "min_limit": 3,
       "max_limit": null,
       "out": "Comment Check.You used {} comments, should be between {} < {}",
       "indicator": "USED_COMMENT"
@@ -25,7 +25,7 @@
       "is_enabled": true,
       "min_limit": 3,
       "max_limit": null,
-      "out": "System Out Printline or Logging Check.You used {} System out Printline statements, should be between {} and {}",
+      "out": "System Out Printline or Logging Check.You used {} System out Printline statements, should be between {} < {}",
       "indicator": "USED_SOPL"
     }
   ],
