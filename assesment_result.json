@@ -1,0 +1,14 @@
+{
+    "Comment Check.You used 12 comments, should be between 3 < No limit": "TEST_STATUS_SUCCESS",
+    "WebDriverWait Check.You used 1 waits, should be between 1 < No limit": "TEST_STATUS_SUCCESS",
+    "Sleep statement Check.You used 6 sleep statements, should be between No limit < 20": "TEST_STATUS_SUCCESS",
+    "System Out Printline or Logging Check.You used 7 System out Printline statements, should be between 3 < No limit": "TEST_STATUS_SUCCESS",
+    "Test Case 1 - Automate filling up a form.Navigated to the google form": "TEST_STATUS_SUCCESS",
+    "Test Case 1 - Automate filling up a form.Typed name into input box": "TEST_STATUS_SUCCESS",
+    "Test Case 1 - Automate filling up a form.Typed phrase into input box": "TEST_STATUS_SUCCESS",
+    "Test Case 1 - Automate filling up a form.Clicked on Experience box": "TEST_STATUS_SUCCESS",
+    "Test Case 1 - Automate filling up a form.Chose any of the Tools you are experienced in": "TEST_STATUS_SUCCESS",
+    "Test Case 1 - Automate filling up a form.Chose how to be addressed option": "TEST_STATUS_SUCCESS",
+    "Test Case 1 - Automate filling up a form.Entered correct time into time input": "TEST_STATUS_SUCCESS",
+    "Test Case 1 - Automate filling up a form.Read the text at the end of submission": "TEST_STATUS_SUCCESS"
+}
