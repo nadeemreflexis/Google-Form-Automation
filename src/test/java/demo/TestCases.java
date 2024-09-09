@@ -29,10 +29,9 @@ public class TestCases {
     public void testCase01() throws InterruptedException{
         // Navigate to google form
         driver.get("https://forms.gle/wjPkzeSEk1CM7KgGA");
-        WebElement nameInputBox = driver.findElement(By.xpath("//input[@type='text']"));
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.visibilityOf(nameInputBox));
+        Thread.sleep(3000);
         System.out.println("wait 1");
+        WebElement nameInputBox = driver.findElement(By.xpath("//input[@type='text']"));
         Wrappers.enterText(nameInputBox, "Crio Learner");
         WebElement practicingAutomationTextArea = driver.findElement(By.xpath("//textarea[contains(@class,'tL9Q4c')]"));
         String practisingAutomationText = "I want to be the best QA Engineer!";
